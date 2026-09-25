@@ -65,7 +65,7 @@ export const profile = {
   // Transparent cut-out photos in /public.
   photo: '/profile.webp',
   aboutPhoto: '/about.webp',
-  handle: '@angad526',
+  handle: '@angadEdulab1',
   // About section poster text
   aboutKeywords: ['Full-Stack', 'AI / LLM', 'Scalable Systems'],
   aboutStatement: "I don't just write code,",
@@ -77,7 +77,7 @@ export const profile = {
     { value: '4', label: 'Key products shipped' },
   ],
   socials: {
-    github: 'https://github.com/angad526',
+    github: 'https://github.com/angadEdulab1',
     linkedin: 'https://linkedin.com/in/angad-chauhan04',
   },
 }
