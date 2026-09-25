@@ -22,9 +22,12 @@ export default function Contact() {
             </p>
             <a
               href={`mailto:${profile.email}`}
-              className="mt-6 inline-block border-b-2 border-accent font-serif text-[clamp(1.5rem,6vw,3.25rem)] leading-tight break-all italic transition hover:text-accent"
+              className="group mt-6 inline-flex items-center gap-3 border-b-2 border-accent pb-1 text-[clamp(1rem,4.4vw,2.5rem)] leading-tight font-semibold tracking-tight [overflow-wrap:anywhere] transition hover:text-accent"
             >
               {profile.email}
+              <span aria-hidden="true" className="transition group-hover:translate-x-1 group-hover:-translate-y-1">
+                ↗
+              </span>
             </a>
           </div>
 
