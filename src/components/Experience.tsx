@@ -3,16 +3,28 @@ import Section from './Section'
 
 export default function Experience() {
   return (
-    <Section id="experience" title="Experience & Education">
-      <ol className="relative space-y-10 border-l border-slate-800 pl-8">
+    <Section id="experience" index="04" label="Experience" solid="Where I've" outline="worked." tone="grid">
+      <ol>
         {experience.map((item) => (
-          <li key={`${item.role}-${item.organization}`} className="relative">
-            <span className="absolute top-1.5 -left-[37px] size-3 rounded-full border-2 border-accent bg-slate-950" />
-            <p className="font-mono text-xs text-slate-400">{item.period}</p>
-            <h3 className="mt-1 text-lg font-semibold text-white">
-              {item.role} <span className="text-accent">@ {item.organization}</span>
-            </h3>
-            <p className="mt-2 leading-relaxed">{item.description}</p>
+          <li
+            key={`${item.role}-${item.organization}`}
+            className="grid gap-3 border-t-2 border-neutral-900 py-10 md:grid-cols-[220px_1fr] md:gap-10"
+          >
+            <p className="text-xs font-medium tracking-widest text-neutral-500 uppercase md:pt-3">{item.period}</p>
+            <div>
+              <h3 className="font-display text-3xl leading-tight tracking-tight sm:text-4xl">{item.role}</h3>
+              <p className="mt-1 font-serif text-2xl text-neutral-600 italic sm:text-3xl">{item.organization}</p>
+              {item.points.length > 0 && (
+                <ul className="mt-6 space-y-3">
+                  {item.points.map((point) => (
+                    <li key={point} className="flex gap-4 leading-relaxed text-neutral-700">
+                      <span className="mt-3 h-0.5 w-4 shrink-0 bg-accent" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </li>
         ))}
       </ol>
