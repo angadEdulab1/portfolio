@@ -5,13 +5,6 @@
   --font-display: 'Anton', 'Impact', sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
   --color-accent: #38bdf8;
-  --animate-marquee: marquee 40s linear infinite;
-
-  @keyframes marquee {
-    to {
-      transform: translateX(-50%);
-    }
-  }
 }
 
 html {
