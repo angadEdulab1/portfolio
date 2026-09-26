@@ -38,7 +38,7 @@ export default function About() {
             <img
               src={profile.aboutPhoto}
               alt={`${profile.name} sitting on a stool`}
-              className="relative z-10 h-[clamp(440px,78vh,760px)] w-auto [mask-image:linear-gradient(to_bottom,black_80%,transparent)]"
+              className="relative z-10 h-[clamp(440px,78vh,760px)] w-auto [mask-image:linear-gradient(to_bottom,black_80%,transparent)] max-sm:h-auto max-sm:w-[min(calc(100vw-3rem),420px)]"
             />
           </div>
 
