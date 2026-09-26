@@ -54,9 +54,8 @@ export default function Navbar() {
           scrolled ? 'h-14' : 'h-14 sm:h-16'
         }`}
       >
-        <a href="#top" onClick={() => setOpen(false)} className="font-display text-2xl tracking-tight sm:text-3xl">
-          {profile.name.split(' ')[0]}
-          <span className="text-accent">.</span>
+        <a href="#top" onClick={() => setOpen(false)} aria-label={`${profile.name} – home`} className="-ml-1 flex items-center">
+          <img src="/logo-mark.webp" alt="" width={226} height={207} className="h-9 w-auto sm:h-10" />
         </a>
 
         <ul className="hidden items-center gap-1 rounded-full bg-neutral-900/5 p-1 text-sm md:flex">
