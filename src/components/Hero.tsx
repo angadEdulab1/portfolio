@@ -41,22 +41,8 @@ export default function Hero() {
             alt={profile.name}
             className="h-[clamp(340px,58vh,600px)] w-auto [mask-image:linear-gradient(to_bottom,black_65%,transparent)]"
           />
-          <div className="absolute inset-x-0 bottom-8 flex flex-col items-center gap-3 sm:bottom-12">
-            <p className="rounded bg-white/75 px-2 py-0.5 text-sm font-medium text-neutral-800 lg:hidden">based in {profile.location}.</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href={`mailto:${profile.email}`}
-                className="rounded-md border-2 border-neutral-900 bg-neutral-900 px-5 py-2.5 text-sm font-medium whitespace-nowrap text-white transition hover:bg-neutral-700 sm:text-base"
-              >
-                Hire me
-              </a>
-              <a
-                href="#projects"
-                className="rounded-md border-2 border-neutral-900 bg-white/80 px-5 py-2.5 text-sm font-medium whitespace-nowrap backdrop-blur transition hover:bg-neutral-100 sm:text-base"
-              >
-                View my projects
-              </a>
-            </div>
+          <div className="absolute inset-x-0 bottom-8 flex justify-center sm:bottom-12 lg:hidden">
+            <p className="rounded bg-white/75 px-2 py-0.5 text-sm font-medium text-neutral-800">based in {profile.location}.</p>
           </div>
         </div>
 
